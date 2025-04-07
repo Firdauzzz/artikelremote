@@ -14,11 +14,11 @@
     "@supabase/supabase-js": "^2.49.4",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
-    "express-ejs-layouts": "^2.5.1"
+    "express-ejs-layouts": "^2.5.1",
+    "nodemon": "^3.1.9"
   },
   "devDependencies": {
     "browser-sync": "^3.0.4",
-    "concurrently": "^9.1.2",
-    "nodemon": "^3.1.9"
+    "concurrently": "^9.1.2"
   }
 }
