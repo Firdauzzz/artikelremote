@@ -3,8 +3,10 @@ const app = express();
 const path = require('path');
 const expressLayouts = require('express-ejs-layouts');
 const supabase = require('./supabase');
+const PORT = process.env.PORT || 3000;
+
 //konfigurasi layouts
-// app.use(expressLayouts)
+app.use(expressLayouts)
 
 //konfigurai statis
 app.use(express.static(path.join(__dirname, 'public')));
@@ -50,7 +52,6 @@ app.get('/hello', (req,res) => {
         , 'public', 'index.html'));
 })
 
-const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
